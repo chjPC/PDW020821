@@ -1,0 +1,55 @@
+<!--
+    INICIO DEL DOCUMENTO.
+    ! -> CONDICIÓN DEL DOCUMENTO.
+    DOCTYPE -> TIPO DE DOCUMENTO.
+    html -> EL DOCUMENTO ES HTML.
+-->
+<!DOCTYPE html>
+
+<!--
+    * SI CUMPLE CON LA SENTENCIA INICIAL CONTINUA CON LA LECTURA DEL DOCUMENTO.
+    html -> ETIQUETA DEL DOCUMENTO HTML.
+    lang -> ATRIBUTO DE LA ETIQUETA (html).
+    "en" -> VALOR DEL ATRIBUTO (LENGUAJE Y/O IDIOMA DEL DOCUMENTO HTML).
+        * EN = ENGLISH
+        * ES = ESPAÑOL
+        * FR = FRANCES, ETC.
+-->
+<html lang="es">
+
+<!-- 
+    INICIO DE LA COLECCION DE METADATOS (head).
+    ETIQUETAS DE METADATOS:
+    - meta -> METADATOS.
+    - title -> TITULO A MOSTRAR.
+    - link -> LLAMADO A DOCUMENTOS CSS.
+    - style -> EJECUTA CSS DENTRO DE HTML.
+    - script -> EJECUTA JAVASCRIPT DENTRO DE HTML.
+-->
+<head>
+    <!--
+        ATRIBUTO charset -> INDICA LA DECODIFICACIÓN DE LOS CARACTERES ESPECIALES (á,é,í,ó,ú,ñ,etc).
+        VALOR "UTF-8" -> VALOR INDICADO PARA EL IDIOMA ESPAÑOL LATINOAMERICA.
+    -->
+    <meta charset="UTF-8">
+    <!-- COMPATIBILIDAD CON LOS DISPOSITIVOS Y NAVEGADORES -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--
+        RESOLUCIÓN (ALTO Y ANCHO) Y ESCALA DE LA PÁGINA WEB RESPONSIVE DESIGN (DISEÑO RESPONSIVO).
+        ATRIBUTO name -> NOMBRE DE LA ETIQUETA.
+        VALOR "viewport" -> HACE REFERENCIA AL ALTO Y ANCHO DE LA PÁGINA WEB.
+        ATRIBUTO content -> TIPO DE CONTENIDO DE LA ETIQUETA.
+        "width=device-width, initial-scale=1.0" -> APERTURA O INICIO DE LA PÁGINA WEB EN ESCALA NORMAL.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- META DE LA DESCRIPCION DE LA EMPRESA O PALABRAS CLAVES, RECORDAR EL ESTANDAR SEO (MOTORES DE BUSQUEDA) -->
+    <meta name="description" content="Descripcion de la empresa o palabras claves.">
+    <!-- TITULO A MOSTRAR EN EL NAVEGADOR (PORTE SUPERIOR) -->
+    <title>MI EMPRESA</title>
+</head>
+
+
+<body>
+    
+</body>
+</html>
