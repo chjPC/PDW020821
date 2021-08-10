@@ -1,0 +1,178 @@
+<!--
+    INICIO DEL DOCUMENTO.
+    ! -> CONDICIÓN DEL DOCUMENTO.
+    DOCTYPE -> TIPO DE DOCUMENTO.
+    html -> EL DOCUMENTO ES HTML.
+-->
+<!DOCTYPE html>
+
+<!--
+    * SI CUMPLE CON LA SENTENCIA INICIAL CONTINUA CON LA LECTURA DEL DOCUMENTO.
+    html -> ETIQUETA DEL DOCUMENTO HTML.
+    lang -> ATRIBUTO DE LA ETIQUETA (html).
+    "en" -> VALOR DEL ATRIBUTO (LENGUAJE Y/O IDIOMA DEL DOCUMENTO HTML).
+        * EN = ENGLISH
+        * ES = ESPAÑOL
+        * FR = FRANCES, ETC.
+-->
+<html lang="es">
+
+<!-- 
+    INICIO DE LA COLECCION DE METADATOS (head).
+    ETIQUETAS DE METADATOS:
+    - meta -> METADATOS.
+    - title -> TITULO A MOSTRAR.
+    - link -> LLAMADO A DOCUMENTOS CSS.
+    - style -> EJECUTA CSS DENTRO DE HTML.
+    - script -> EJECUTA JAVASCRIPT DENTRO DE HTML.
+-->
+<head>
+    <!--
+        ATRIBUTO charset -> INDICA LA DECODIFICACIÓN DE LOS CARACTERES ESPECIALES (á,é,í,ó,ú,ñ,etc).
+        VALOR "UTF-8" -> VALOR INDICADO PARA EL IDIOMA ESPAÑOL LATINOAMERICA.
+    -->
+    <meta charset="UTF-8">
+    <!-- COMPATIBILIDAD CON LOS DISPOSITIVOS Y NAVEGADORES -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--
+        RESOLUCIÓN (ALTO Y ANCHO) Y ESCALA DE LA PÁGINA WEB RESPONSIVE DESIGN (DISEÑO RESPONSIVO).
+        ATRIBUTO name -> NOMBRE DE LA ETIQUETA.
+        VALOR "viewport" -> HACE REFERENCIA AL ALTO Y ANCHO DE LA PÁGINA WEB.
+        ATRIBUTO content -> TIPO DE CONTENIDO DE LA ETIQUETA.
+        "width=device-width, initial-scale=1.0" -> APERTURA O INICIO DE LA PÁGINA WEB EN ESCALA NORMAL.
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- META DE LA DESCRIPCION DE LA EMPRESA O PALABRAS CLAVES, RECORDAR EL ESTANDAR SEO (MOTORES DE BUSQUEDA) -->
+    <meta name="description" content="Descripcion de la empresa o palabras claves.">
+    <!-- TITULO A MOSTRAR EN LOS MOTORES DE BUSQUEDA (SEO) -->
+    <meta name="title" content="MI EMPRESA">
+
+    <!-- TITULO A MOSTRAR EN EL NAVEGADOR (PORTE SUPERIOR) -->
+    <title>MI EMPRESA</title>
+
+    <!--
+        LLAMADO A DOCUMENTOS O ESTILOS CSS.
+        rel -> TIPO DE DOCUMENTO.
+        "stylesheet" -> DOCUMENTO CSS.
+        href -> ENLAZADO DEL DOCUMENTO.
+    -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- PARA EJECUTAR EL CSS DENTRO DEL HTML -->
+    <style></style>
+
+    <!-- PARA EJECUTAR EL JS DENTRO DEL HTML -->
+    <script></script>
+
+    <!-- LLAMADA EXTERNA DE UN DOCUMENTO JS MENOS PESADO -->
+    <script src="home.js"></script>
+
+</head>
+
+<!-- INICIO Y VISIÓN DE TODA LA WEB -->
+<body>
+
+    <!-- CABECERA DE INICIO DE LA WEB \ PUEDE SER COLOCADA UNA VEZ -->
+    <header></header>
+
+    <!-- ETIQUETA PARA LOS VIDEOS -->
+    <video src=""></video>
+
+    <!-- MENU DE NAVEGACIÓN \ PUEDE SER COLOCADA UNA VEZ -->
+    <nav></nav>
+
+    <!-- LISTAS DE ENUMERACION -->
+    <ul></ul> <!-- LISTA DESORDENADA -->
+    <ol></ol> <!-- LISTA ORDENADA -->
+    <li></li> <!-- LISTA MANUAL -->
+
+    <!-- ETIQUETA PARA ICONOS -->
+    <i></i>
+    <span></span>
+
+    <!-- MENU SECUNDARIO -->
+    <sidebar></sidebar>
+    <div class="sidebar"></div>
+
+    <!-- ETIQUETA PRINCIPAL DE LA WEB \ PUEDE SER COLOCADA UNA VEZ -->
+    <main class="contentedor-a"></main>
+
+    <!--
+        LAS CLASES (class) -> PUEDEN SER IGUALES EN MUCHAS ETIQUETAS.
+        LOS IDENTIFICADORES (id) -> DEBEN SER UNICOS.
+    -->
+
+    <!-- ETIQUETA DE CAJA -->
+    <div class="contentedor" id="web"></div>
+
+    <!-- ETIQUETA DE SECCIONES -->
+    <section id="Web"></section>
+
+    <!-- ETIQUETAS DE ENCABEZADO -->
+    <h1>TITULO</h1> <h2>TITULO</h2> <h3>TITULO</h3> <h4>TITULO</h4> <h5>TITULO</h5> <h6>TITULO</h6>
+
+    <!-- PARRAFOS -->
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime sint explicabo quae eaque eos! Beatae cupiditate veritatis repudiandae vitae reprehenderit!</p>
+
+    <!-- MOSTRAR ARTÍCULOS -->
+    <article>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque non, consequatur vel cumque commodi illo.</article>
+
+    <!-- ETIQUETA DE ENLACES -->
+    <a href="Aquí va el enlace">Inicio</a>
+
+    <!-- ETIQUETA DE TEXTO EN NEGRITA -->
+    <b>Lorem ipsum dolor sit amet.</b>
+
+    <!-- ETIQUETA PARA SALTOS DE LÍNEA -->
+    <br>
+
+    <!-- ETIQUETA PARA LAS PUBLICIDADES -->
+    <aside></aside>
+
+    <!-- ETIQUETA PARA TEXTO IMPORTANTE -->
+    <strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis deserunt exercitationem placeat ex eaque, quis enim blanditiis.</strong>
+
+    <!-- ETIQUETA PARA TEXTO DE AUTOR -->
+    <em>Christian Puyen</em>
+
+    <!--
+        IMAGENES \ 
+        ATRIBUTO SRC -> RUTA DE LA IMAGEN.
+        ATRIBUTO ALT -> NOMBRE INTERNO.
+    -->
+    <img src="banner-html5.png" alt="Imagen01" />
+    
+    <!-- PIE DE PÁGINA \ PUEDE SER COLOCADA UNA VEZ -->
+    <footer></footer>
+
+    <!-- ETIQUETA DE FORMULARIOS -->
+    <form action="ruta.js" method="GET"></form>
+    <form action="" method="POST" enctype="multipart/form-data"></form>
+    <!-- ETIQUETAS DE LLENADO DE INFORMACIÓN -->
+    <input type="text" id="names"> <!-- RECIBE TEXTO Y/O NUMEROS -->
+    <input type="number"> <!-- RECIBE SOLO NUMEROS -->
+    <input type="email"> <!-- RECIBE CORREOS ELECTRÓNICOS -->
+    <input type="date"> <!-- RECIBE FECHAS -->
+    <input type="password"> <!-- RECIBE CONTRASEÑAS -->
+    <input type="checkbox"> <!-- PERMITE SELECCIONAR UNA OPCION -->
+    <input type="radio"> <!-- PERMITE SELECCIONAR UNA OPCION -->
+    <!-- ETIQUETAS DE IDENTIFICACION DE LOS CAMPOS -->
+    <label for="names">Nombres y Apellidos</label>
+    <!-- ETIQUETA DE SELECCION -->
+    <select name="" id="">
+        <option selected>Seleccione tipo de documento</option>
+        <option value="dni">Documento Nacional de Identidad</option>
+        <option value="pasaporte">Pasaporte</option>
+    </select>
+    <!-- ETIQUETA DE REDACTADO -->
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <!-- ETIQUETAS DE BOTONES -->
+    <button type="button">Boton</button>
+    <button type="submit">Envia la información</button>
+    <button type="reset">Borra la información de los campos</button>
+    <input type="submit" value="Enviar datos">
+    
+    <!-- LLAMADA EXTERNA DE UN DOCUMENTO JS MÁS PESADO -->
+    <script src="home.js"></script>
+</body>
+</html>
