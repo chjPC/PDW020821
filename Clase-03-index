@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTAFOLIO</title>
+</head>
+<body>
+    
+    <main class="home">
+
+        <header class="header__home">
+
+            <nav>
+                <ul>
+                    <li><i>icono01</i></li>
+                    <li><i>icono02</i></li>
+                </ul>
+                <ul>
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Nosotros</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </nav>
+
+            <div class="banner__header">
+
+                <div class="banner__header-video">
+                    <video src="video_background.mp4" muted autoplay loop controls></video>
+                </div>
+
+                <div class="banner__header-data">
+                    <b><p class="banner__header-data-subtitulo">Fashion</p></b>
+                    <h1>Elise Maguire</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet totam rem, unde porro ut voluptates repudiandae magnam laboriosam hic ducimus, iusto iste vitae nostrum.</p>
+                    <a href="nosotros.html">Read More <i></i></a>
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="content__home-a"></section>
+
+        <section class="content__home-b"></section>
+
+        <section class="content__home-c"></section>
+
+        <footer></footer>
+
+    </main>
+
+</body>
+</html>
