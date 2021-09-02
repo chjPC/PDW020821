@@ -1,0 +1,320 @@
+/**/  /* <- PARA COLOCAR COMENTARIOS (/ + *, luego, * + /) */
+
+    /*
+    DECLARACIÓN: FORMADA POR UN SELECTOR, LLAVES, PROPIEDAD Y EL VALOR DE PROPIEDAD.
+
+    SELECTORES:
+        - p -> ETIQUETAS HTML.
+        - .content -> CLASS (clases HTML).
+        - #content -> ID (identificadores HTML).
+
+    selector{
+        propiedad: valor de propiedad;
+    }
+    
+    TODO VALOR DE PROPIEDAD AL SER CULMINADO, SE CIERRA CON UN PUNTO Y COMA (;).
+
+    REPRESENTACIONES:
+        - class -> . (una clases HTML es representada mediante un punto).
+        - id -> # (un identificador HTML es representado mediante un numeral o simbolo gato).
+
+    */
+    
+
+/* CONOCIENDO LAS PROPIEDADES CSS */
+
+    /*
+    PROPIEDADES DE DIMENSIONES, ANCHO Y ALTO DE LA PANTALLA(VIEWPORT)
+        - width -> ANCHO.
+        - height -> ALTO.
+        - min-width -> MÍNIMO DE ANCHO.
+        - min-height -> MÍNIMO DE ALTO.
+        - max-width -> MÁXIMO DE ANCHO.
+        - max-height -> MÁXIMO DE ALTO.
+    LAS DIMENSIONES SE MIDEN EN 3 TIPOS DE VALORES BÁSICOS:
+        - pixeles (px).
+        - porcentajes (%).
+        - viewport:
+            - vh -> v(viewport) h(height) CONTIENE LAS MEDIDAS EXACTAS EN EL ALTO DE LA PANTALLA.
+            - vw -> v(viewport) w(width) CONTIENE LAS MEDIDAS EXACTAS EN EL ANCHO DE LA PANTALLA.
+    */
+
+    .viewport{
+        width: 100vw; /* 100(representa el 100%) CALCULA EL 100% DEL ANCHO. */
+        height: 100vw; /* 100(representa el 100%) CALCULA EL 100% DEL ALTO. */
+    }
+
+    .pixeles{
+        width: 450px; /* DA UN ANCHO EXACTO */
+        height: 450px; /* DA UN ALTO EXACTO */
+    }
+
+    .porcentajes{
+        width: 100%; /* REPRESENTA EL 100% DEL ANCHO */
+        height: 100%; /* REPRESENTA EL 100% DEL ALTO */
+        /*
+        A TENER EN CUENTA, LOS PORCENTAJES SON MEDICIONES TRABAJADAS DENTRO DE UNA CAJA CON DIMENSIONES
+        YA ESTABLECIDAS, DE LO CONTRARIO NO SURGEN EFECTO.
+        */
+    }
+
+    /*
+    PROPIEDAD BORDER: PARA LOS BORDES DE LAS CAJAS.
+        - border: none; -> NO GENERA NINGUN BORDE O QUITA LOS BORDES YA INGRESADOS.
+        - border: 1px(representa el grosor de la línea) solid(representa el tipo de línea) black(color de la línea).
+    TIPOS DE LÍNEAS DE LA PROPIEDAD BORDER:
+        - solid -> sólido.
+        - dotted -> punteada.
+        - double -> 2 líneas solidas.
+        - dashed -> cuadricula.
+        - groove -> marco sombreado a la derecha y abajo(3D).
+        - ridge -> marco sombreado arriba y a la izquierda(3D).
+        - inset -> marco sombreado arriba y a la izquierda(sólido).
+        - outset -> marco sombreado a la derecha y abajo(sólido).
+    */
+    .border{
+        border: 1px solid red;
+        border: none;
+        border-top: 1px solid red;
+        border-left: 2px dotted blue;
+        border-bottom: 3px dashed #ffee00;
+        border-right: 4px double rgba(0, 128, 0, 0.3);
+    }
+
+    /*
+    PROPIEDAD PADDING: GENERA MARGENES INTERNOS.
+        - padding: 12px(todos los lados);
+        - padding: 12px(arriba y abajo) 5px(izquierda y derecha);
+        - padding: 12px(arriba) 5px(derecha) 12px(abajo) 5px(izquierda);
+    */
+    .padding{
+        padding: 30px;
+        padding-top: 40px;
+        padding-left: 10px;
+        padding-bottom: 5px;
+        padding-right: 7px;
+    }
+
+    /*
+    PROPIEDAD MARGIN: GENERA MARGENES EXTERNO.
+        - margin: 12px(todos los lados);
+        - margin: 12px(arriba y abajo) 5px(izquierda y derecha);
+        - margin: 12px(arriba) 5px(derecha) 12px(abajo) 5px(izquierda);
+    */
+    .margin{
+        margin: 30px;
+        margin-top: 40px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+        margin-right: 7px;
+    }
+
+    /*
+    PROPIEDAD BACKGROUND: PINTA UN FONDO YA SEA CON UN COLOR SÓLIDO O UNA IMAGEN.
+        - background: none; -> QUITA TODOS LOS FONDOS SEA DE COLOR SÓLIDO O IMAGEN.
+        - background: blue; -> GENERA UN FONDO DE COLOR SÓLIDO (blue -> azul).
+        - background: #ffee00; -> GENERA UN FONDO DE COLOR SÓLIDO (#ffee00 -> código hex).
+        - background: rgb(87,129,87); -> GENERA UN FONDO DE COLOR SÓLIDO (rgb(87,129,87) -> código RGB).
+        - background: rgba(129,124,124,0.5); -> GENERA UN FONDO DE COLOR SÓLIDO CON TRANSPARENCIA.
+            - rgba(129,124,124, 0.5 -> REPRESENTA LA TRANSPARENCIA DE 0.1 HASTA 0.9 ).
+        - background: url('../img/desarrollo-web.jpg'); -> GENERA UN FONDO CON IMAGEN.
+        - background-image: url('../img/desarrollo-web.jpg'); -> GENERA UN FONDO CON IMAGEN.
+        - background-repeat: repeat; -> REPITE LA IMAGEN.
+        - background-repeat: no-repeat; -> NO GENERA REPETICIÓN DE IMAGEN.
+        - background-size: 100%(TODOS LOS LADOS); -> REPRESENTA EL ALTO Y ANCHO DE LA IMAGEN.
+        - background-size: 100%(ARRIBA Y ABAJO) 100%(IZQUIERDA Y DERECHA); -> REPRESENTA EL ALTO Y ANCHO DE LA IMAGEN.
+            TAMBIEN:
+            - 100% -> DIMENSIONA LA IMAGEN AL 100% DE LA CAJA.
+            - 100vw -> DIMENSIONA LA IMAGEN AL 100% DEL ANCHO DE LA CAJA.
+            - 100vh -> DIMENSIONA LA IMAGEN AL 100% DEL ALTO DE LA CAJA.
+        - background-attachment: fixed; -> LA IMAGEN TOMA UNA POSICIÓN FIJA DENTRO DE LA CAJA.
+        - background-attachment: cover; -> LA IMAGEN TOMA UNA POSICION RIGIDA DENTRO DE LA CAJA.
+    */
+    .background{
+        background: red;
+    }
+
+    /*
+    PROPIEDAD BORDER-RADIUS: GENERA BORDES REDONDEADOS.
+        - border-radius: 1px; -> BORDES A TRAVÉS DE PIXELES.
+        - border-radius: 1%; -> BORDES A TRAVÉS DE PORCETAJES.
+        - border-radius: 20px 5px 10px 0px;
+        - border-radius: 50%; -> GENERA BORDES PARA FORMAR UN CÍRCULO.
+        - border-top-left-radius: 20px;
+        - border-top-right-radius: 20px;
+        - border-bottom-left-radius: 20px;
+        - border-bottom-right-radius: 20px;
+    */
+    .borderRadius{
+        border-radius: 10px;
+    }
+
+    /*
+    PROPIEDAD POSITION: TIPO DE POSICIÓN Y FUNCIONAMIENTO DE LAS CAJAS(BOX).
+        - position: relative; -> GENERA UNA CAJA PADRE O CAJA PRINCIPAL.
+        - position: absolute; -> GENERA UNA CAJA FLOTANTE Y SE REFERENCIA DE LA CAJA PADRE.
+        - position: fixed; -> GENERA UNA CAJA PADRE Y FLOTANTE, LA CUAL PODEMOS MOVER EN CUALQUIER DIRECCIÓN.
+            TIPOS DE DIRECCIONADORES:
+            - top -> ARRIBA.
+            - bottom -> ABAJO.
+            - left -> IZQUIERDA.
+            - right -> DERECHA.
+            LOS DIRECCIONADORES SOLO DAN EFECTO EN CAJAS CON VALORES DE PROPIEDAD ABSOLUTE O FIXED.
+    */
+    .relative{
+        position: relative;
+        width: 400px;
+        height: 100px;
+        background: black;
+    }
+    .absolute{
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        left: 0;top: 0;
+        background: red;
+    }
+    .fixed{
+        position: fixed;
+        bottom: 0;right: 0;
+        width: 100px;
+        height: 100px;
+        background: green;
+    }
+
+    /*
+    PROPIEDAD DISPLAY: GENERA UN COMPORTAMIENTO EN LAS CAJAS(BOX).
+        - display: none -> OCULTA UNA CAJA O CONTENIDO.
+        - display: block -> CONVIERTE EN UN BLOQUE CUALQUIER ELEMENTO.
+        - display: flex -> CONVIERTE LAS CAJAS FLEXIBLES(FLEXBOX).
+            - flex-direction: row; -> POSICIONA LAS CAJAS EN FILAS.
+            - flex-direction: column; -> POSICIONA LAS CAJAS EN COLUMNAS.
+            - flex-direction: row-reverse; -> FILAS REFLEJO DE ESPEJO.
+            - flex-direction: column-reverse; -> COLUMNAS REFLEJO DE ESPEJO.
+            - justify-content: center; -> CENTRAR DE IZQUIERDA A DERECHA.
+            - align-items: center; -> CENTRAR DE ARRIBA HACIA ABAJO.
+            - justify-content: flex-start; -> COLOCAR EL VALOR AL INICIO DE LA CAJA.
+            - align-items: flex-start; -> COLOCAR EL VALOR ARRIBA DE LA CAJA.
+            - justify-content: flex-end; -> COLOCAR EL VALOR AL FINAL DE LA CAJA.
+            - align-items: flex-end; -> COLOCAR EL VALOR ABAJO DE LA CAJA.
+            - flex-wrap: wrap; -> CONVIERTE EN OTRA FILA, DEPENDIENDO DEL ANCHO ESTABLECIDO.
+            - flex-wrap: nowrap; -> NO CONVIERTE EN OTRA FILA NINGUNA OTRA CAJA.
+    */
+    .display{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        width: 100%;
+        height: 300px;
+        background: #ccc;
+    }
+    .display p{
+        width: 30%;
+        display: flex;
+        justify-content: flex-start;
+        background: red;
+    }
+    .display a{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        text-decoration: line-through;
+    }
+    .display span{
+        width: 30%;
+        display: flex;
+        justify-content: flex-end;
+        background: blue;
+    }    
+
+    /*
+    PROPIEDAD VISIBILITY: OCULTA O MUESTRA CAJAS, TEXTO E IMÁGENES.
+        - visibility: visible; -> MUESTRA EL ELEMENTO.
+        - visibility: hidden; -> OCULTA EL ELEMENTO.
+
+    PROPIEDAD CURSOR: DA UN DISEÑO AL PUNTERO LLAMADO CURSOR.
+        - cursor: pointer; -> DISEÑO HABITUAL DEL CURSOR.
+
+    PROPIEDAD TEXT-DECORATION: TRABAJA CON LOS SUBRAYADOS.
+        - text-decoration: none; -> QUITA LOS SUBRAYADOS.
+        - text-decoration: underline; -> AGREGA LOS SUBRAYADOS.
+        - text-decoration: overline; -> AGREGA LOS SUBRAYADOS HACIA ARRIBA.
+        - text-decoration: line-through; -> AGREGA LOS SUBRAYADOS EN EL TEXTO.
+
+    PROPIEDADES DE ESPACIOS ENTRE LÍNEAS:
+        - letter-spacing: 1px; -> ESPACIO ENTRE CARACTERES.
+        - line-height: 1; -> ESPACIO ENTRE LÍNEAS.
+
+    PROPIEDAD TEXT-ALIGN: ALINEAMIENTO DEL TEXTO:
+        - text-align: center; -> CENTRADO.
+        - text-align: justify; -> JUSTIFICADO.
+        - text-align: left; -> HACIA LA IZQUIERDA.
+        - text-align: right; -> HACIA LA DERECHA.
+
+    PROPIEDAD TEXT-TRANSFORM: TRANSFORMACIÓN DEL TEXTO:
+        - text-transform: none; -> NO GENERA NINGUNA TRANSFORMACIÓN.
+        - text-transform: lowercase; -> Transforma mayúsculas a minúsculas.
+        - text-transform: uppercase; -> Transforma minúsculas a mayúsculas.
+        - text-transform: capitalize; -> Transforma a mayúsculas cada letra inicial de una palabra.
+
+    PROPIEDAD TEXT-SHADOW: GENERA UNA SOMBRA EN EL TEXTO:
+        - text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+
+    PROPIEDAD OPACITY: GENERA TRANSPARENCIAS EN CAJAS, IMAGENES O TEXTOS:
+        - opacity: 0; -> totalmente transparente.
+        - opacity: 1; -> totalmente visible.
+        LAS TRANSPARENCIAS TAMBIÉN SE PUEDEN MEDIR DESDE 0.1 HASTA 0.9
+    
+    PROPIEDAD COLOR: DA UN COLOR AL TEXTO.
+        - color: red;
+    */
+    .ocultar{
+        width: 100%;
+        visibility: visible;
+        /* visibility: hidden; */
+        cursor: auto;
+        text-decoration: line-through;
+        letter-spacing: 10px;
+        line-height: 50px;
+        text-align: right;
+        text-transform: capitalize;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        opacity: 0.7;
+        color: rgb(57, 119, 173);
+    }
+    /*
+    PROPIEDAD TRANSFORM: TRANSFORMA O TRASLADA LAS CAJAS, IMAGENES O TEXTO.
+        TIPOS DE MEDIDAS:
+            - 45° -> 45 grados (deg).
+            - 400px -> PIXELES (px).
+            - 1 -> NÚMEROS NATURALES.
+
+        - transform: rotate(37deg); -> SIRVE PARA ROTAR LOS ELEMENTOS.
+        - transform: translateX(400px); -> MUEVE EL ELEMENTO DE IZQUIERDA A DERECHA O VICEVERZA.
+        - transform: translateY(400px); -> MUEVE EL ELEMENTO DE ARRIBA HACIA ABAJO O VICEVERZA.
+        - transform: skew(400px); -> DEFORMA EL ELEMENTO.
+        - transform: scale(0); -> AGRANDA O ACHICA EL ELEMENTO (desde 0 a más).
+        - transform: none; -> QUITA TODAS LAS TRANSFORMACIONES GENERADAS.
+        
+    */
+    .transform{
+        width: 120px;height: 120px;
+        border-radius: 50%;
+        margin: 0 120px;
+        background: darkgreen;
+        transform: scale(5);
+        transform: none;
+    }
+
+    /*
+    EXISTE UN SELECTOR UNIVERSAL EL CUAL ES REPRESENTADO POR UN ASTERISCO (*).
+    LAS PROPIEDADES INGRESADAS EN DICHO SELECTOR GENERA CAMBIOS GENERALES EN EL PROYECTO CREADO.
+    */
+    *{
+        padding: 0px; /* DEVUELVE TODOS LOS MARGENES INTERNOS A 0 */
+        margin: 0px; /* DEVUELVE TODOS LOS MARGENES EXTERNOS A 0 */
+        box-sizing: border-box; /* REFERENCIA LAS CAJAS PARA LAS ANIMACIONES */
+        list-style: none; /* QUITA EL ESTILO A LAS LISTAS -> ul, ol, li */
+    }
