@@ -1,8 +1,11 @@
 /* IMPORT */
 @import url('header.css');
+    /* Section 01 */
+@import url('section-a.css');
 
 /* SELECTORES GENERALES */
 *{margin: 0;padding: 0;box-sizing: border-box;}
+body{font-family: 'Arial';}
 ul,ol,li{list-style: none;}
 button,input,select,textarea{outline: none;}
 
@@ -11,4 +14,6 @@ button,input,select,textarea{outline: none;}
     --amarillo: yellow;
     --amarillo-f: #ffc400;
     --gris: #959595;
+    --gris-c: #f3efef;
+    --gris-s: #d4d3d3;
 }
