@@ -2,6 +2,10 @@
 @import url('header.css');
     /* Section 01 */
 @import url('section-a.css');
+    /* Section 02 */
+@import url('section-b.css');
+    /* Section 03 */
+@import url('section-c.css');
 
 /* SELECTORES GENERALES */
 *{margin: 0;padding: 0;box-sizing: border-box;}
