@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- es-PE -->
+
+<head>
+    <!-- Meta de caracteres especiales -->
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <!-- Meta del Responsive -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- Meta de Descripcion de la empresa -->
+    <meta name="description" content="Portafolio Web Personal">
+    <!-- Meta de Autor de la web -->
+    <meta name="author" content="chjPC Company">
+    <!-- Meta de Eslogan de la empresa -->
+    <meta property="og:title" content="chjPC Company">
+    <meta property="og:description" content="Ganamos, cuando nuestros clientes ganan...">
+    <!-- Meta de Logos -->
+    <meta property="og:image" content="">
+    <meta property="og:image" content="">
+
+    <!-- Titulo de la Empresa -->
+    <title>Christian Puyen</title>
+
+    <!--- Favicon --->
+    <link rel="shortcut icon" href="" type="image/png" />
+    <!-- Enlace CSS -->
+    <link rel="stylesheet" href="repository/css/home.css">
+    <!-- Enlace ICONS -->
+    <link rel="stylesheet" href="repository/icons/css/all.min.css">
+
+</head>
+
+<body>
+
+    <main class="home">
+
+        <header class="header__home">
+
+            <nav>
+                <ul>
+                    <li class="icon__responsive"><i class="fa fa-bars"></i></li> <!--icono del menu-->
+                    <li> <i class="fa fa-search"> </i></li> <!--icono del buscador-->
+                </ul>
+                <ul>
+                    <li><a href="" class="active__page">Inicio</a></li>
+                    <li><a href="">Nosotros</a></li>
+                    <li><a href="">Contacto</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </nav>
+
+            <div class="banner__header">
+
+                <div class="banner__header-video">
+                    <video src="repository/videos/background-video.mp4" muted autoplay loop controls></video>
+                </div>
+
+                <div class="banner__header-data">
+                    <p class="banner__header-data-subtitulo">Fashion</p>
+                    <h1>Elise Maguire</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam eveniet totam rem, unde porro ut voluptates repudiandae magnam laboriosam hic ducimus, iusto iste vitae nostrum.</p>
+                    <a href="nosotros.html">Read More <i class="fa fa-caret-right"></i></a>
+                    <form action="" class="banner__header-form" method="POST">
+                        <p>Lorem, ipsum dolor.</p>
+                        <!-- SECTION -->
+                        <div class="banner__header-form-section">
+                            <input type="email" placeholder="Ingrese su correo aquí">
+                            <button type="submit">Suscribe</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="content__home-a">
+            <div class="content__home-a-wrap"> <!-- Primera caja -->
+                <div class="content__home-a-wrap-header"> <!-- Cabecera de la caja -->
+                    <i class="fa fa-chart-line"></i>
+                    <h3>SEO FRIENDLY</h3>
+                    <span>01</span>
+                </div>
+                <div class="content__home-a-wrap-body"> <!-- Cuerpo de la caja -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aspernatur minus magnam beatae obcaecati.</p>
+                    <span><i class="fa fa-plus"></i></span>
+                </div>
+            </div>
+            <div class="content__home-a-wrap"> <!-- Segunda caja -->
+                <div class="content__home-a-wrap-header"> <!-- Cabecera de la caja -->
+                    <i class="fa fa-laptop"></i>
+                    <h3>RESPONSIVE TEMPLATE</h3>
+                    <span>02</span>
+                </div>
+                <div class="content__home-a-wrap-body"> <!-- Cuerpo de la caja -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aspernatur minus magnam beatae obcaecati.</p>
+                    <span><i class="fa fa-plus"></i></span>
+                </div>
+            </div>
+            <div class="content__home-a-wrap"> <!-- Tercera caja -->
+                <div class="content__home-a-wrap-header"> <!-- Cabecera de la caja -->
+                    <i class="fa fa-cogs"></i>
+                    <h3>EASE TO COSTUMIZE</h3>
+                    <span>03</span>
+                </div>
+                <div class="content__home-a-wrap-body"> <!-- Cuerpo de la caja -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aspernatur minus magnam beatae obcaecati.</p>
+                    <span><i class="fa fa-plus"></i></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="content__home-b">
+            <div> <!-- PARA ESTILOS DIRECTOS -->
+                <p><b>Optimas</b> is a responsive multipourse HTML template</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, quia error dolores velit quae illo</p>
+            </div>
+            <button type="button">BUY NOW</button>
+        </section>
+
+        <section class="content__home-c">
+            <div class="content__home-c-header">
+                <p><b>LATEST</b>WORK</p>
+                <div>
+                    <i class="fa fa-chevron-left"></i>
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+            </div>
+            <div class="content__home-c-body">
+                <section>
+                    <div class="content__home-c-body-title">
+                        <img src="repository/img/base-datos.jpg" width="25%" height="225px" alt="Imagen01">
+                        <p><b>BASE</b>DE DATOS</p>
+                    </div>
+                    <div class="content__home-c-body-parrafo">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid sint.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="content__home-c-body-title">
+                        <img src="repository/img/desarrollo-web.jpg" width="25%" height="225px" alt="Imagen01">
+                        <p><b>DESARROLLO</b>WEB</p>
+                    </div>
+                    <div class="content__home-c-body-parrafo">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid sint.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="content__home-c-body-title">
+                        <img src="repository/img/diseño-responsivo.jpg" width="25%" height="225px" alt="Imagen01">
+                        <p><b>DISEÑO</b>RESPONSIVO</p>
+                    </div>
+                    <div class="content__home-c-body-parrafo">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid sint.</p>
+                    </div>
+                </section>
+                <section>
+                    <div class="content__home-c-body-title">
+                        <img src="repository/img/seo-web.jpg" width="25%" height="225px" alt="Imagen01">
+                        <p><b>SEO</b>WEB</p>
+                    </div>
+                    <div class="content__home-c-body-parrafo">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid sint.</p>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <footer>
+
+            <div class="header__footer">
+                
+                <div class="header__footer-left">
+                    <h1>Elise Maguire</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <a href="">Read More</a>
+                </div>
+
+                <div class="header__footer-center">
+                    <div>
+                        <h3>Explore</h3>
+                        <a href="">Inicio</a>
+                        <a href="">Nosotros</a>
+                        <a href="">Contacto</a>
+                        <a href="">Blog</a>
+                    </div>
+                    <div>
+                        <h3>Visit</h3>
+                        <strong>Calle Francisco Cabrera 283, Of. 201, Chiclayo - Per&uacute;</strong>
+                        <h3>New Bussines</h3>
+                        <strong>chjpc.company@gmail.com</strong>
+                        <strong>+51 949 220 497</strong><!-- CÓDIGO DEL PAÍS + NÚMERO -->
+                        <strong>(074) 513 474</strong><!-- CÓDIGO DE CIUDAD + NÚMERO -->
+                    </div>
+                    <div>
+                        <h3>Follow</h3>
+                        <a href="">Instagram</a>
+                        <a href="">Twitter</a>
+                        <a href="">LikedIn</a>
+                    </div>
+                    <div>
+                        <h3>Legal</h3>
+                        <a href="">Terms</a>
+                        <a href="">Privacy</a>
+                    </div>
+                </div>
+
+                <div class="header__footer-right">
+                    <a href="">Next: Nosotros</a>
+                </div>
+
+            </div>
+
+            <div class="body__footer">
+                <p>&copy; 2021 Elise Maguire. All Rights Reserved.</p>
+                <p>Created by chjPC Company</p>
+            </div>
+
+        </footer>
+
+    </main>
+
+</body>
+
+</html>
