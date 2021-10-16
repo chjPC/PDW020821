@@ -1,0 +1,55 @@
+/* SECCION B */
+.content__home-b{
+    width: 100%;
+    height: auto;
+    padding: 1.5% 3.5%;
+    background: var(--gris-c);
+
+    display: flex;
+    align-items: center;
+}
+
+.content__home-b > div{
+    width: calc(85% - 30px);
+    height: auto;
+    border: 1px solid rgba(0,0,0,0.2);
+    background: #fff;
+    padding: 16px;
+
+    position: relative;
+}
+.content__home-b > div p:first-child{
+    font-size: 24px;
+}
+.content__home-b > div p:last-child{
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.content__home-b > button{
+    display: block;
+    width: 15%;
+    height: 70px;
+    margin-left: 30px;
+
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    box-shadow: 2px 3px 3px rgba(0,0,0,0.5);
+    background: var(--amarillo-f);
+
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Linea */
+.content__home-b > div::before{
+    content: "";
+    width: 29px;
+    height: auto;
+    border: 1px solid rgba(0,0,0,0.2);
+    position: absolute;
+    right: -31px;
+    top: calc(100% - 50%);
+}
